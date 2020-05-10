@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+        <link href="../stylesheets/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8">
+    <title>LOGIN</title>
+
+
+    <style>
+      body{
+        background-image: url(../images/patt.jpg);
+        background-size:cover;
+      }
+      div.background{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        text-align: center;
+      }
+      .btn {
+        outline: none;
+        background: #3494E6;
+        border: 0;
+        border-radius: 4px;
+        padding: 5px 10px;
+        color: #FFFFFF;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: inherit;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin: 0 0 10spx;
+        text-decoration: none;
+      }
+      .amfont{
+            font-family: 'Amaranth', sans-serif;
+          }
+    </style>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-primary navbar-fixed-top">
+          <div class = "amfont">              
+              <a class="navbar-brand">　　　B l o c k D o n a t i o n　　　</a>
+          </div>
+      </nav>
+    
+  <div class = "background">
+    <div class="form">
+        <br><br><br><br><br><br><br><br><br>
+      <h2>Hello, <%= userName %>님</h2>
+      <a class="btn" role="button" href='./HomeSuccessIndiv'>개인회원</a>
+      <a class="btn" role="button" href='./HomeSuccessOrg'>단체회원</a>
+    </div>
+  </div>
+  </body>
+</html>

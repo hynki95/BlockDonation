@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>BLOCK DONATION - admin</title>
+
+  <link href="../stylesheets/style.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+  <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
+  <!--  Custom styles for this template -->
+  <link href="../stylesheets/starter-template.css" rel="stylesheet">
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+       <!--[if lt IE 9]-->
+         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+         <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/navbars/">
+       <!--[endif]-->
+</head>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+<script>
+
+$("#confirm").on("click",  function(){
+ console.log('confirm')
+
+  $.ajax({
+      type: "POST",
+      url: '/confirm',
+      data: {
+         
+      },
+      success: function(result){
+      console.log('result')
+      }
+  });
+});
+
+function abc(){
+  console.log('a');
+  alert('처리되었습니다.');
+}
+</script>
+
+<body class="text-center">
+    <div class = "margin">
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Turn into DONUT</div>
+      
+        <!-- Table -->
+        <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <td>#</td>
+                        <td>회원아이디</td>
+                        <td>바꿀금액</td>
+                        <td>토큰</td>
+                    </tr>   
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class = "number">1</td>
+                        <td class = "adId">djc03148</td>
+                        <td class = "adAmount">20000</td>
+                        <td class = "adDonut">20</td>
+                    </tr>
+    
+                    <tr>
+                        <td class = "number">2</td>
+                        <td class = "adId">hyunki99</td>
+                        <td class = "adAmount">25000</td>
+                        <td class = "adDonut">25</td> 
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+          </div>
+          <a class="btn btn-primary" href="#" id=confirm role="button" onClick="abc()">Confirm</a>　
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../javascripts/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+</body>
+</html>
